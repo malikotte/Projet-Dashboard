@@ -1,0 +1,28 @@
+img{
+    width: 200px;
+}
+
+#input1{
+    width: 250px;
+    margin-bottom: 15px;
+    max-width: 3500;
+}
+
+.form-control{
+    width: 250px;
+}
+.bouton2{
+    width: 250px;
+   position: relative;
+   margin: auto;
+   margin-top: 10px;
+}
+center{
+    margin-top: 35px;;
+}
+
+#para{
+    
+    margin-top: 10px;
+    font-size: 12px;
+}
