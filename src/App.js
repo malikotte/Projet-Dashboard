@@ -4,10 +4,12 @@ import Footer from './components/Footer/Footer.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Landing from './components/Landing/Landing.js';
 import Admin from './components/Admin/Admin.js';
+import Form from './components/Form/Form.js';
 import React, { Component } from 'react';
+
 import logo from './covid.png';
 import "./components/Header/Header.css";
-import { BrowserRouter as Router, Route, Link, Navlink, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 
 
 class App extends Component {
@@ -41,7 +43,17 @@ class App extends Component {
           </div>
           <Switch>
             <Route path="/Admin">
-              <Admin />
+              <div className="container mt-3">
+                <div className="row mb-5">
+                  <div className="col-sm-6">
+                    <Admin />
+                  </div>
+                  <div className="col-sm-6">
+                    <Form />
+                  </div>
+                </div>
+              </div>
+
               <Footer />
             </Route>
             <Route path="/">
