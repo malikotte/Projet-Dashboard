@@ -25,13 +25,13 @@ class CasEce extends Component {
         };
     }
     componentDidMount() {
-        fetch('http://localhost:3001/api/vl/users')
+        fetch('http://localhost:3001/posts/')
             .then((response) => {
                 return response.json()
             })
 
             .then((result) => {
-                this.setState(result);
+                this.setState({ data: result });
                 console.log(result);
             })
 
@@ -55,7 +55,7 @@ class CasEce extends Component {
                     <img src={logo} alt="Ece" />
                     <p className="card-text mt-5"><strong>Nombre de cas :</strong> {compteur} 🧟</p>
                     <p className="card-text mt-1"><strong>Nombre de tests effectués :</strong> {longueur} 💉</p>
-                    <p className="card-text mt-1"><strong>Dernier contaminé :</strong> {this.state.data.length > 0 && this.state.data[longueur - 1].firstname + " " + this.state.data[longueur - 1].lastname}</p>
+                    <p className="card-text mt-1"><strong>Dernier testé :</strong> {this.state.data.length > 0 && this.state.data[longueur - 1].firstname + " " + this.state.data[longueur - 1].lastname}</p>
                     <div className="row justify-content-center mt-5 mr-3">
                         <div className="trait"></div>
                         <div className="col-sm-4"> </div>

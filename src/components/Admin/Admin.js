@@ -25,28 +25,30 @@ class Admin extends Component {
 
 
     handleSubmit(event) {
-        alert('A name was submitted: ' + this.state.firstname + this.state.lastname + this.state.statut);
         event.preventDefault();
     }
     handleSubmit = (event) => {
-
-        alert('A name was submitted: ' + this.state.firstname + this.state.lastname + this.state.statut);
-        fetch('http://localhost:3001/api/vl/users/', {
+        fetch('http://localhost:3001/posts/add', {
             method: 'POST',
-            mode: 'no-cors',
             headers: {
                 'Accept': 'application/json',
-                'Content-Type': 'application/x-www-form-urlencoded'
+                "Content-Type": "application/json",
             },
             // We convert the React state to JSON and send it as the POST body
-            body: "firstname=" + this.state.firstname + "&lastname=" + this.state.lastname + "&statut=" + this.state.statut
+            //body: "firstname=" + this.state.firstname + "&lastname=" + this.state.lastname + "&statut=" + this.state.statut
+            body: JSON.stringify({
+                firstname: this.state.firstname,
+                lastname: this.state.lastname,
+                statut: this.state.statut,
+            })
         }).then(function (response) {
-            console.log(response)
+            // console.log(response)
         });
 
         event.preventDefault();
     }
     render() {
+
         return (
             <div className="card mb-5">
                 <div className="card-body">

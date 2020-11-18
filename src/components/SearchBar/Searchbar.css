@@ -1,7 +1,7 @@
 
 input[type=text] {
     width: 355px;
-    
+    border-radius: 0;
     max-width: 355px;
   }
 

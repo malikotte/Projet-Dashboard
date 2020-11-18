@@ -3,7 +3,6 @@ import "./Searchbar.css";
 import Autosuggest from 'react-autosuggest';
 import PostData from './data.json';
 
-
 function escapeRegexCharacters(str) {
     return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
@@ -92,7 +91,7 @@ class Searchbar extends Component {
                             value={this.state.value}
                             onChange={this.state.handleChange}
                         />
-                        <button id="city-input-button" className="btn btn-success" type="submit">Actualiser</button>
+                        <button id="city-input-button" className="btn btn-success rounded-0" type="submit">Actualiser</button>
                     </form>
                 </div>
             </div>

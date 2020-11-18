@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./Graph.css";
 import ReactApexChart from "react-apexcharts";
+
 function numStr(a, b) {
     a = '' + a;
     b = b || ' ';
@@ -21,7 +22,7 @@ class Graph extends Component {
         super(props);
         this.state = {
             Countries: [],
-            series: [],
+            series: [5, 50, 70],
             options: {
                 chart: {
                     width: 380,
@@ -36,10 +37,9 @@ class Graph extends Component {
                 },
                 labels: ['Nombre de Cas', 'Nombre de Morts', 'Nombre de Guéris'],
                 responsive: [{
-                    breakpoint: 480,
                     options: {
                         chart: {
-                            width: 200
+                            width: 500
                         },
                         legend: {
                             show: false,
@@ -47,7 +47,7 @@ class Graph extends Component {
                         }
                     }
                 }],
-                colors: ['#ee6f57', '#1f3c88', '#070d59'],
+                colors: ['#1b262c', '#0f4c75', '#3282b8'],
 
             },
 
@@ -67,44 +67,55 @@ class Graph extends Component {
             .then((result) => {
                 this.setState(result);
                 // console.log(result);
+
                 this.setState({
                     series:
                         [this.state.Countries[59].TotalConfirmed, this.state.Countries[59].TotalDeaths, this.state.Countries[59].TotalRecovered]
 
                 })
             })
+    }
 
+    componentDidUpdate(prevProps) {
+        // Utilisation classique (pensez bien à comparer les props) :
+        if (this.props.name !== prevProps.name) { // Vérifie si le pays a été modifié (valeur par défaut France)
+            let NumPaysSaisi = 59; // ID France
+            for (let i = 0; i < this.state.Countries.length; i++) { // Boucle for qui permet d'assosier le nom du pays à sa position dans le json de l'api
+                if (this.props.name === this.state.Countries[i].Country) {
+                    //alert(`position : ${i}, pays : ${this.state.Countries[i].Country}`);
+                    NumPaysSaisi = i;
+                }
 
+            }
+            fetch('https://api.covid19api.com/summary')
+                .then((response) => {
+                    return response.json()
+                })
 
+                .then((result) => {
+                    this.setState(result);
+                    // console.log(result);
+
+                    this.setState({
+                        series:
+                            [this.state.Countries[NumPaysSaisi].TotalConfirmed, this.state.Countries[NumPaysSaisi].TotalDeaths, this.state.Countries[NumPaysSaisi].TotalRecovered]
+
+                    })
+                })
+        }
     }
 
 
-
     render() {
-        /* let min = 0;
-         let max = 20;
-         for (let i = 0; i < this.state.Countries.length; i++) {
-             if (this.state.Countries[i].TotalConfirmed < min) {
-                 min = this.state.Countries[i].TotalConfirmed;
-             }
-             if (this.state.Countries[i].TotalConfirmed > max) {
-                 max = this.state.Countries[i].TotalConfirmed;
-             }
-     
-         }
-         */
-
-
-
         return (
             <div className="card">
                 <div className="card-body">
                     <div>
                     </div>
-                    <h5 className="mb-5">Épidémie en France</h5>
+                    <h5 className="mb-5">Épidémie en {this.props.name}</h5>
                     <ReactApexChart options={this.state.options} series={this.state.series} type="pie" width={420} />
                     <div class="text-muted mt-4">
-                        <center><small>Données issues du gouvernement français</small></center>
+                        <center><small>Données issues du gouvernement</small></center>
                     </div>
                 </div>
 
