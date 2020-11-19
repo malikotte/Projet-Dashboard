@@ -17,19 +17,18 @@
     <img src="https://github.com/malikotte/Projet-Dashboard/blob/main/src/covid.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Application sur la pandémie de COVID-19</h3>
+  <h3 align="center">COVID-19</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    Application sur la pandémie de COVID-19
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+   
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="#">Malik Derkaoui</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="#">Yassine Derkaoui</a>
   </p>
 </p>
 
