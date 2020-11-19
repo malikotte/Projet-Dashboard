@@ -22,7 +22,7 @@
   <p align="center">
     Application sur la pandémie de COVID-19
   </p>
-  <p align="center">Malik Derkaoui</p>
+  <p align="center"><b>Malik Derkaoui</b></p>
 </p>
 
 
