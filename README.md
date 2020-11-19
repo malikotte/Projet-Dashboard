@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Application sur la pandémie du COVID-19
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Ce projet a été fait avec REACTJS/NodeJS/Bootstrap/Mongodb
 
 ## Available Scripts
 
