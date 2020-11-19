@@ -45,28 +45,23 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## À propos du projet
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need.
-
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should element DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue.
-
-A list of commonly used resources that I find helpful are listed in the acknowledgements.
-
-### Built With
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
-* [Laravel](https://laravel.com)
+Notre projet intitulé Covid Analyzer a pour but d'afficher les données issues des différents gouvernements sur le Coronavirus. C'est une application web crée en ReactJS/Nodejs, sur le site est présent 6 widgets qui affichent différentes informations sur le pays choisi par l'utilisateur et sur l'ECE Paris.
+Vous avez à disposition une page d'administration qui va vous permettre d'injecter des données dans un des 6 widgets présents sur le site.
 
 
+### Comment lancer notre projet ?
+
+1) Rendez-vous à la racine du projet et effectuez la commande suivante : npm start
+
+2) Après avoir démarré l'application web, il faut démarrer l'api pour cela vous devez vous rendrez dans le dossier api avec un : cd api et effectuez un npm start.
+
+3) Si vous souhaitez visualiser le storybook, rendez à la racine du projet et faites la commande suivant : npm run storybook.
+
+4) Pour que l'étape 2) fonctionne, vous devez avoir préalablement avoir installé mongodb sur votre ordinateur afin que la base de données puisse fonctionner.
+
+5) Parfait ! Tout est lancé, vous pouvez dès à présent utiliser notre application Web, amusez-vous bien !
 
 <!-- GETTING STARTED -->
 ## Getting Started
