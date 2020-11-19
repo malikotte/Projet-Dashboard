@@ -27,20 +27,6 @@
 
 
 
-<!-- TABLE OF CONTENTS -->
-## Table of Contents
-
-* [About the Project](#about-the-project)
-  * [Built With](#built-with)
-* [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
-  * [Installation](#installation)
-* [Usage](#usage)
-* [Roadmap](#roadmap)
-* [Contributing](#contributing)
-* [License](#license)
-* [Contact](#contact)
-* [Acknowledgements](#acknowledgements)
 
 
 
@@ -53,21 +39,33 @@ Vous avez à disposition une page d'administration qui va vous permettre d'injec
 
 ### Comment lancer notre projet ?
 
-1) Rendez-vous à la racine du projet et effectuez la commande suivante : npm start
+1) Rendez-vous à la racine du projet et effectuez la commande suivante : 
+```
+npm start
+```
 
 2) Après avoir démarré l'application web, il faut démarrer l'api pour cela vous devez vous rendrez dans le dossier api avec un : cd api et effectuez un npm start.
+```
+cd api
+npm start
+```
 
 3) Si vous souhaitez visualiser le storybook, rendez à la racine du projet et faites la commande suivant : npm run storybook.
+
+```
+npm run storybook
+```
 
 4) Pour que l'étape 2) fonctionne, vous devez avoir préalablement avoir installé mongodb sur votre ordinateur afin que la base de données puisse fonctionner.
 
 5) Parfait ! Tout est lancé, vous pouvez dès à présent utiliser notre application Web, amusez-vous bien !
 
 <!-- GETTING STARTED -->
-## Getting Started
+## Outil de répartition des tâches
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+Nous avons utilisé Trello pour nous aider à la répartition des tâches, c'est un outil simple d'utilisation et qui permet d'une vue global de voir le travail qui a ou qui doit être effectué.
+Nous vous mettons à disposition notre lien : https://trello.com/b/CWNUWDkD/travail-de-groupe
+
 
 ### Prerequisites
 
