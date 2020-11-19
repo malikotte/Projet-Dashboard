@@ -21,14 +21,10 @@
 
   <p align="center">
     Application sur la pandémie de COVID-19
-    <br />
-   
-    <br />
-    <br />
-    <a href="#">Malik Derkaoui</a>
+    
+    <a>Malik Derkaoui</a>
     ·
-    ·
-    <a href="#">Yassine Derkaoui</a>
+    <a>Yassine Derkaoui</a>
   </p>
 </p>
 
