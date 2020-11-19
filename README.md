@@ -17,7 +17,7 @@
     <img src="https://github.com/malikotte/Projet-Dashboard/blob/main/src/covid.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">Application sur la pandémie de COVID-19</h3>
 
   <p align="center">
     An awesome README template to jumpstart your projects!
