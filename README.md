@@ -22,9 +22,9 @@
   <p align="center">
     Application sur la pandémie de COVID-19
     
-    Malik Derkaoui
+    <b>Malik Derkaoui</b>
     
-    Inès Djebra
+    <b>Inès Djebra</b>
   </p>
 </p>
 
