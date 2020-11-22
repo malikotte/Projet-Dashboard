@@ -9,7 +9,6 @@
 <br />
 <p align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    
     <img src="https://github.com/malikotte/Projet-Dashboard/blob/main/src/covid.png" alt="Logo" width="80" height="80">
   </a>
 
