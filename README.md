@@ -45,7 +45,7 @@ cd api
 npm start
 ```
 
-3) Si vous souhaitez visualiser le storybook, rendez-vous à la racine du projet et faites la commande suivant : npm run storybook.
+3) Si vous souhaitez visualiser le storybook (http://localhost:6006/), rendez-vous à la racine du projet et faites la commande suivant : npm run storybook.
 
 ```
 npm run storybook
@@ -53,7 +53,8 @@ npm run storybook
 
 4) Pour que l'étape 2) fonctionne, vous devez avoir préalablement avoir installé mongodb sur votre ordinateur afin que la base de données puisse fonctionner.
 
-5) Parfait ! Tout est lancé, vous pouvez dès à présent utiliser notre application Web, amusez-vous bien !
+5) Parfait ! Tout est lancé, vous pouvez dès à présent utiliser notre application Web (http://localhost:3000/), amusez-vous bien !
+
 
 <!-- GETTING STARTED -->
 ## Outil de répartition des tâches
