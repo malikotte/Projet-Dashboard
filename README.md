@@ -45,7 +45,7 @@ cd api
 npm start
 ```
 
-3) Si vous souhaitez visualiser le storybook, rendez à la racine du projet et faites la commande suivant : npm run storybook.
+3) Si vous souhaitez visualiser le storybook, rendez-vous à la racine du projet et faites la commande suivant : npm run storybook.
 
 ```
 npm run storybook
