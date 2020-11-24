@@ -30,13 +30,13 @@ class Landing extends Component {
                             <NbreCas name={this.state.name} />
                         </div>
                         <div className="col-xl-4 col-lg-6 mb-5">
-                            <TotalCas />
+                            <Graph name={this.state.name} />
                         </div>
                         <div className="col-xl-4 col-lg-6 mb-5">
                             <CasEce />
                         </div>
                         <div className="col-xl-4 col-lg-6 mb-5">
-                            <Graph name={this.state.name} />
+                            <TotalCas />
                         </div>
                         <div className="col-xl-4 col-lg-6 mb-5">
                             <Graph2 name={this.state.name} />
