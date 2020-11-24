@@ -1,7 +1,16 @@
 import React, { Component } from 'react';
 import "./Admin.css";
 import logo from './ece.png';
+import styled, { keyframes } from 'styled-components';
 
+import { fadeIn } from 'react-animations';
+
+
+const bounceAnimation = keyframes`${fadeIn}`;
+
+const BouncyDiv = styled.div`
+  animation: 1s ${bounceAnimation};
+`;
 
 
 class Admin extends Component {
@@ -51,6 +60,7 @@ class Admin extends Component {
     render() {
 
         return (
+            <BouncyDiv>
             <div className="card mb-5">
                 <div className="card-body">
                     <img src={logo} alt="Ece" />
@@ -69,6 +79,7 @@ class Admin extends Component {
                     </form>
                 </div>
             </div>
+            <BouncyDiv>
         );
     }
 }
