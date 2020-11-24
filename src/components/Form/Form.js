@@ -4,6 +4,16 @@ import { faEdit, faTrashAlt } from '@fortawesome/free-solid-svg-icons'
 import "./Form.css";
 import { Modal } from 'react-bootstrap';
 
+import styled, { keyframes } from 'styled-components';
+
+import { fadeIn } from 'react-animations';
+
+
+const bounceAnimation = keyframes`${fadeIn}`;
+
+const BouncyDiv = styled.div`
+  animation: 1s ${bounceAnimation};
+`;
 
 class Form extends Component {
     constructor(props) {
@@ -108,6 +118,7 @@ class Form extends Component {
     render() {
         return (
             <div>
+            <BouncyDiv>
                 <div className="card" >
                     <div className="card-body overflow-auto">
                         <table class="table datatable">
@@ -147,6 +158,7 @@ class Form extends Component {
                     </div>
 
                 </div>
+                   </BouncyDiv>
                 <Modal show={this.state.openModal} aria-labelledby='ModalHeader'>
                     <Modal.Header>
                         <Modal.Title>Éditer</Modal.Title>
