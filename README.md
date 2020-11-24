@@ -33,8 +33,12 @@ Vous avez à disposition une page d'administration qui va vous permettre d'injec
 
 
 ### Comment lancer notre projet ?
-1) Avant de démarrer l'application, il faut démarrer l'api, l'api se trouve dans la branche master. 
-Si vous souhaitez démarrer l'api sur une base de données local, alors exécutez la commande ci-dessous
+1) Rendez-vous dans à la racine de l'api qui se trouve dans la branche master et installez les modules avec la commande suivante :
+```
+npm install
+```
+2) Une fois l'étape précèdente terminée, il faut démarrer l'api.
+Si vous souhaitez démarrer l'api sur une base de données local (assurez-vous d'avoir installé mongodb aupréalable), alors exécutez la commande ci-dessous
 ```
 npm start localhost
 ```
@@ -42,8 +46,10 @@ Sinon, faites :
 ```
 npm start 
 ```
-2) Une fois l'API executée, vous pouvez lancer l'application Web, pour cela téléchargez le contenu de la branche Main et effectuez à la racine du projet la commande ci-dessous.
-
+2) Une fois l'API executée, vous pouvez lancer l'application Web, pour cela téléchargez le contenu de la branche Main et effectuez à la racine du projet les commandes ci-dessous.
+```
+npm install
+```
 ```
 npm start
 ```
