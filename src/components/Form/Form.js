@@ -106,7 +106,7 @@ class Form extends Component {
         return (
             <div>
                 <div className="card" >
-                    <div className="card-body class="overflow-auto">
+                    <div className="card-body overflow-auto">
                         <table class="table datatable">
                             <thead>
                                 <tr>
