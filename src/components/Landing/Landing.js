@@ -26,24 +26,22 @@ class Landing extends Component {
                 <Searchbar onNameFormSubmitted={this.onNameFormSubmitted} />
                 <div className="container-fluid">
                     <div className="row mb-5">
-                        <div className="col-xl-4 col-lg-4 col-xs-12 col-md-7 col-sm-10">
+                        <div className="col-xl-4 col-lg-6 mb-5">
                             <NbreCas name={this.state.name} />
                         </div>
-                        <div className="col-xl-4 col-lg-4 col-xs-6 col-md-4 col-sm-10">
+                        <div className="col-xl-4 col-lg-6 mb-5">
                             <TotalCas />
                         </div>
-                        <div className="col-xl-4 col-lg-4 col-xs-12 col-md-7 col-sm-10">
+                        <div className="col-xl-4 col-lg-6 mb-5">
                             <CasEce />
                         </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-xl-4 col-lg-4 col-xs-6 col-md-4 col-sm-10">
+                        <div className="col-xl-4 col-lg-6 mb-5">
                             <Graph name={this.state.name} />
                         </div>
-                        <div className="col-xl-4 col-lg-4 col-xs-12 col-md-7 col-sm-10">
+                        <div className="col-xl-4 col-lg-6 mb-5">
                             <Graph2 name={this.state.name} />
                         </div>
-                        <div className="col-xl-4 col-lg-4 col-xs-12 col-md-7 col-sm-10">
+                        <div className="col-xl-4 col-lg-6 mb-5">
                             <Graph3 name={this.state.name} />
                         </div>
                     </div>
