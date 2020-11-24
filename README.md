@@ -41,7 +41,6 @@ npm start localhost
 Sinon, faites :
 ```
 npm start 
-
 ```
 2) Une fois l'API executée, vous pouvez lancer l'application Web, pour cela téléchargez le contenu de la branche Main et effectuez à la racine du projet la commande ci-dessous.
 
