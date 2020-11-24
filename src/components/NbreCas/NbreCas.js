@@ -55,7 +55,7 @@ class NbreCas extends Component {
             <div className="card">
                 <div className="card-body">
                     <h5 className="card-title mt-2">
-                        Statistiques {this.state.Countries.length > 0 && (this.state.Countries[NumPaysSaisi].Country)}</h5>
+                        Statistiquess {this.state.Countries.length > 0 && (this.state.Countries[NumPaysSaisi].Country)}</h5>
                     <p className="card-text mt-5"><strong>Nombre de cas :</strong> {this.state.Countries.length > 0 && (numStr(this.state.Countries[NumPaysSaisi].TotalConfirmed, "."))} 🧟 </p>
                     <p className="card-text mt-1"><strong>Total de décès :</strong> {this.state.Countries.length > 0 && (numStr(this.state.Countries[NumPaysSaisi].TotalDeaths, "."))} ☠</p>
                     <p className="card-text mt-1"><strong>Total de guéris :</strong> {this.state.Countries.length > 0 && (numStr(this.state.Countries[NumPaysSaisi].TotalRecovered, "."))} ❤️</p>
