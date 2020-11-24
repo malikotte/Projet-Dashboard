@@ -2,6 +2,15 @@ import React, { Component } from 'react';
 import "./CasEce.css";
 
 import logo from '../Admin/ece.png';
+import styled, { keyframes } from 'styled-components';
+import { fadeIn } from 'react-animations';
+
+
+const bounceAnimation = keyframes`${fadeIn}`;
+
+const BouncyDiv = styled.div`
+  animation: 1s ${bounceAnimation};
+`;
 function numStr(a, b) { // Séparateur de millier 
     a = '' + a;
     b = b || ' ';
@@ -50,6 +59,7 @@ class CasEce extends Component {
 
         }
         return (
+            <BouncyDiv>
 
             <div className="card">
                 <div className="card-body">
@@ -70,6 +80,7 @@ class CasEce extends Component {
                 </div>
 
             </div>
+            </BouncyDiv>
         );
     }
 }
