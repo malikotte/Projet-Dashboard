@@ -1,6 +1,17 @@
 import React, { Component } from "react";
 import "./Graph2.css";
 import ReactApexChart from "react-apexcharts";
+import styled, { keyframes } from 'styled-components';
+import { fadeIn } from 'react-animations';
+
+
+const bounceAnimation = keyframes`${fadeIn}`;
+
+const BouncyDiv = styled.div`
+  animation: 1s ${bounceAnimation};
+`;
+
+
 function numStr(a, b) {
     a = '' + a;
     b = b || ' ';
@@ -115,6 +126,7 @@ class Graph2 extends Component {
 
 
         return (
+            <BouncyDiv>
             <div className="card">
                 <div className="card-body">
                     <div>
@@ -125,6 +137,7 @@ class Graph2 extends Component {
                 </div>
 
             </div>
+            </BouncyDiv>
         );
     }
 }
