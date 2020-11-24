@@ -33,12 +33,16 @@ Vous avez à disposition une page d'administration qui va vous permettre d'injec
 
 
 ### Comment lancer notre projet ?
-1) Avant de démarrer l'application, il faut démarrer l'api, l'api se trouve dans la branche master. Exécutez la commande ci-dessous à la racine de l'api
+1) Avant de démarrer l'application, il faut démarrer l'api, l'api se trouve dans la branche master. 
+Si vous souhaitez démarrer l'api sur une base de données local, alors exécutez la commande ci-dessous
 ```
-npm start
+npm start localhost
+```
+Sinon, faites :
+```
+npm start 
 
 ```
-
 2) Une fois l'API executée, vous pouvez lancer l'application Web, pour cela téléchargez le contenu de la branche Main et effectuez à la racine du projet la commande ci-dessous.
 
 ```
