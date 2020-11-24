@@ -79,7 +79,7 @@ class Admin extends Component {
                     </form>
                 </div>
             </div>
-            <BouncyDiv>
+            </BouncyDiv>
         );
     }
 }
