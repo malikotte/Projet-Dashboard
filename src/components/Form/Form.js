@@ -32,7 +32,7 @@ class Form extends Component {
         });
     }
     componentDidMount() {
-        fetch('http://express-app-covid.herokuapp.com/posts/')
+        fetch('https://express-app-covid.herokuapp.com/posts/')
             .then((response) => {
                 return response.json()
             })
