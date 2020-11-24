@@ -51,7 +51,7 @@ npm start
 npm run storybook
 ```
 
-4) Pour que l'étape 1) fonctionne, vous devez avoir préalablement avoir installé mongodb sur votre ordinateur afin que la base de données puisse fonctionner.
+4) Pour que l'étape 1) fonctionne, vous devez avoir préalablement avoir installé mongodb sur votre ordinateur afin que la base de données puisse fonctionner. (Par défaut, notre api est reliée à une base de données en ligne, cette étape n'est pas importante si vous ne souhaitez pas gérer la bdd de votre côté).
 
 5) Parfait ! Tout est lancé, vous pouvez dès à présent utiliser notre application Web (http://localhost:3000/), amusez-vous bien !
 
