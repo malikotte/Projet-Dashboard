@@ -7,7 +7,14 @@ import CasEce from '../CasEce/CasEce';
 import Graph from '../Graph/Graph';
 import Graph2 from '../Graph2/Graph2';
 import Graph3 from '../Graph3/Graph3';
+import styled, { keyframes } from 'styled-components';
+import { fadeIn } from 'react-animations';
 
+const bounceAnimation = keyframes`${fadeIn}`;
+
+const BouncyDiv = styled.div`
+  animation: 1s ${bounceAnimation};
+`;
 
 class Landing extends Component {
     constructor(props) {
@@ -23,7 +30,9 @@ class Landing extends Component {
     render() {
         return (
             <div>
+            <BouncyDiv>
                 <Searchbar onNameFormSubmitted={this.onNameFormSubmitted} />
+            </BouncyDiv>
                 <div className="container-fluid">
                     <div className="row mb-5">
                         <div className="col-xl-4 col-lg-6 mb-5">
