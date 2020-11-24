@@ -33,25 +33,25 @@ Vous avez à disposition une page d'administration qui va vous permettre d'injec
 
 
 ### Comment lancer notre projet ?
+1) Avant de démarrer l'application, il faut démarrer l'api, l'api se trouve dans la branche master. Exécutez la commande ci-dessous à la racine de l'api
+```
+npm start
 
-1) Rendez-vous à la racine du projet et effectuez la commande suivante : 
+```
+
+2) Une fois l'API executée, vous pouvez lancer l'application Web, pour cela téléchargez le contenu de la branche Main et effectuez à la racine du projet la commande ci-dessous.
+
 ```
 npm start
 ```
 
-2) Après avoir démarré l'application web, il faut démarrer l'api pour cela vous devez vous rendrez dans le dossier api avec un : cd api et effectuez un npm start.
-```
-cd api
-npm start
-```
-
-3) Si vous souhaitez visualiser le storybook (http://localhost:6006/), rendez-vous à la racine du projet et faites la commande suivant : npm run storybook.
+3) Si vous souhaitez visualiser le storybook (http://localhost:6006/), rendez-vous à la racine du projet (main) et faites la commande suivant : npm run storybook.
 
 ```
 npm run storybook
 ```
 
-4) Pour que l'étape 2) fonctionne, vous devez avoir préalablement avoir installé mongodb sur votre ordinateur afin que la base de données puisse fonctionner.
+4) Pour que l'étape 1) fonctionne, vous devez avoir préalablement avoir installé mongodb sur votre ordinateur afin que la base de données puisse fonctionner.
 
 5) Parfait ! Tout est lancé, vous pouvez dès à présent utiliser notre application Web (http://localhost:3000/), amusez-vous bien !
 
