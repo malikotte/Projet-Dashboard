@@ -59,11 +59,11 @@ class NbreCas extends Component {
                     <p className="card-text mt-5"><strong>Nombre de cas :</strong> {this.state.Countries.length > 0 && (numStr(this.state.Countries[NumPaysSaisi].TotalConfirmed, "."))} 🧟 </p>
                     <p className="card-text mt-1"><strong>Total de décès :</strong> {this.state.Countries.length > 0 && (numStr(this.state.Countries[NumPaysSaisi].TotalDeaths, "."))} ☠</p>
                     <p className="card-text mt-1"><strong>Total de guéris :</strong> {this.state.Countries.length > 0 && (numStr(this.state.Countries[NumPaysSaisi].TotalRecovered, "."))} ❤️</p>
-                    <div className="row justify-content-center mt-5 mr-3">
+                    <div className="row justify-content-center mt-5 mr-3 ml-3">
                         <div className="trait"></div>
-                        <div className="col-sm-4"> <br />+{this.state.Countries.length > 0 && (numStr(this.state.Countries[NumPaysSaisi].NewDeaths))} <br />Morts</div>
-                        <div className="col-sm-offset-3 col-sm-4"><br />+{this.state.Countries.length > 0 && (numStr(this.state.Countries[NumPaysSaisi].NewConfirmed, "."))}<br />Infectés </div>
-                        <div className="col-sm-offset-3 col-sm-3"><br />+{this.state.Countries.length > 0 && (numStr(this.state.Countries[NumPaysSaisi].NewRecovered, "."))}<br />Guéris ️</div>
+                        <div className="col-3"> <br />+{this.state.Countries.length > 0 && (numStr(this.state.Countries[NumPaysSaisi].NewDeaths))} <br />Morts</div>
+                        <div className="col-3"><br />+{this.state.Countries.length > 0 && (numStr(this.state.Countries[NumPaysSaisi].NewConfirmed, "."))}<br />Infectés </div>
+                        <div className="col-3"><br />+{this.state.Countries.length > 0 && (numStr(this.state.Countries[NumPaysSaisi].NewRecovered, "."))}<br />Guéris ️</div>
                     </div>
                 </div>
             </div>
