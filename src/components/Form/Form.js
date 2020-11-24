@@ -47,7 +47,8 @@ class Form extends Component {
 
 
     handleSubmit = (event) => {
-        fetch(`https://express-app-covid.herokuapp.com/posts/update/${this.state.id_user}`, {
+        //https://express-app-covid.herokuapp.com/posts/update/${this.state.id_user}
+        fetch(`http://localhost:3001/posts/update/${this.state.id_user}`, {
             method: 'PUT',
             headers: {
                 'Accept': 'application/json',
@@ -67,7 +68,8 @@ class Form extends Component {
     }
     componentDidUpdate(prevProps) {
         if (this.state.firstname !== prevProps.firstname) {
-            fetch('https://express-app-covid.herokuapp.com/posts/')
+            // https://express-app-covid.herokuapp.com/posts/
+            fetch('http://localhost:3001/posts/')
                 .then((response) => {
                     return response.json()
                 })
@@ -83,7 +85,8 @@ class Form extends Component {
 
 
     delete(id) {
-        fetch('https://express-app-covid.herokuapp.com/posts/' + id, {
+        //https://express-app-covid.herokuapp.com/posts/
+        fetch('http://localhost:3001/posts/' + id, {
             method: 'DELETE',
 
             headers: {
