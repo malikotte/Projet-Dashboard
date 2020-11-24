@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import "./CasEce.css";
 
 import logo from '../Admin/ece.png';
-function numStr(a, b) {
+function numStr(a, b) { // Séparateur de millier 
     a = '' + a;
     b = b || ' ';
     let c = '',
