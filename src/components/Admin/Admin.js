@@ -28,7 +28,7 @@ class Admin extends Component {
         event.preventDefault();
     }
     handleSubmit = (event) => {
-        fetch('http://pure-earth-54344.herokuapp.com:3001/posts/add', {
+        fetch('https://express-app-covid.herokuapp.com/:3001/posts/add', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
