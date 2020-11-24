@@ -25,7 +25,8 @@ class CasEce extends Component {
         };
     }
     componentDidMount() {
-        fetch('https://express-app-covid.herokuapp.com/posts/')
+        //https://express-app-covid.herokuapp.com/posts/
+        fetch('http://localhost:3001/posts/')
             .then((response) => {
                 return response.json()
             })
