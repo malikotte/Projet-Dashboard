@@ -47,7 +47,7 @@ class Form extends Component {
 
 
     handleSubmit = (event) => {
-        fetch(`http://localhost:3001/posts/update/${this.state.id_user}`, {
+        fetch(`https://express-app-covid.herokuapp.com:3001/posts/update/${this.state.id_user}`, {
             method: 'PUT',
             headers: {
                 'Accept': 'application/json',
