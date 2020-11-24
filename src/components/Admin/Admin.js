@@ -38,7 +38,7 @@ class Admin extends Component {
     }
     handleSubmit = (event) => {
         // https://express-app-covid.herokuapp.com/posts/add
-        fetch('https://express-app-covid.herokuapp.com/posts/add', {
+        fetch('http://localhost:3001/posts/add', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
