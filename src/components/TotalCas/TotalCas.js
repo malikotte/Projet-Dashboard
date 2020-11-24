@@ -47,11 +47,11 @@ class TotalCas extends Component {
                     <p className="card-text mt-5"><strong>Nombre de cas :</strong> {numStr(this.state.Global.TotalConfirmed, ".")} 🧟 </p>
                     <p className="card-text mt-1"><strong>Total de décès :</strong> {numStr(this.state.Global.TotalDeaths, ".")} ☠</p>
                     <p className="card-text mt-1"><strong>Total de guéris :</strong> {numStr(this.state.Global.TotalRecovered, ".")} ❤️</p>
-                    <div className="row justify-content-center mt-5 mr-3">
+                    <div className="row justify-content-center mt-5 mr-3 ml-3">
                         <div className="trait"></div>
-                        <div className="col-sm-4"> <br />+{numStr(this.state.Global.NewDeaths)} <br />Morts</div>
-                        <div className="col-sm-offset-3 col-sm-4"><br />+{numStr(this.state.Global.NewConfirmed, ".")}<br />Infectés </div>
-                        <div className="col-sm-offset-3 col-sm-3"><br />+{numStr(this.state.Global.NewRecovered, ".")}<br />Guéris ️</div>
+                        <div className="col-3"> <br />+{numStr(this.state.Global.NewDeaths)} <br />Morts</div>
+                        <div className="col-sm-offset-3 col-3"><br />+{numStr(this.state.Global.NewConfirmed, ".")}<br />Infectés </div>
+                        <div className="col-sm-offset-3 col-3"><br />+{numStr(this.state.Global.NewRecovered, ".")}<br />Guéris ️</div>
                     </div>
                 </div>
             </div>
