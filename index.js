@@ -6,8 +6,16 @@ const app = express();
 var cors = require('cors');
 const path = require('path');
 const dbName = "api";
-const dbUrl = `mongodb+srv://malik:mdp1@cluster0.yj2fu.mongodb.net/${dbName}?retryWrites=true&w=majority`;
+let dbUrl;
 
+const command = process.argv[2];
+
+
+if (command === "localhost") {
+    dbUrl = `mongodb://localhost:27017/${dbName}`;
+} else {
+    dbUrl = `mongodb+srv://malik:mdp1@cluster0.yj2fu.mongodb.net/${dbName}?retryWrites=true&w=majority`;
+}
 
 
 
