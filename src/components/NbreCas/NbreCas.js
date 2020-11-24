@@ -1,6 +1,14 @@
 import React, { Component } from 'react';
 import "./NbreCas.css"
+import styled, { keyframes } from 'styled-components';
+import { fadeIn } from 'react-animations';
 
+
+const bounceAnimation = keyframes`${fadeIn}`;
+
+const BouncyDiv = styled.div`
+  animation: 1s ${bounceAnimation};
+`;
 function numStr(a, b) {
     a = '' + a;
     b = b || ' ';
@@ -51,7 +59,7 @@ class NbreCas extends Component {
 
 
         return (
-
+            <BouncyDiv>
             <div className="card">
                 <div className="card-body">
                     <h5 className="card-title mt-2">
@@ -67,6 +75,7 @@ class NbreCas extends Component {
                     </div>
                 </div>
             </div>
+            </BouncyDiv>
         );
     }
 }
