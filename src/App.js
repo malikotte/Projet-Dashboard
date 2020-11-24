@@ -20,10 +20,10 @@ class App extends Component {
             <Route path="/Admin">
               <div className="container mt-3">
                 <div className="row mb-5">
-                  <div className="col-xs-12 col-md-6">
+                  <div className="col-xl-6 col-lg-6 mb-2">
                     <Admin />
                   </div>
-                  <div className="col-md-6">
+                  <div className="col-xl-6 col-lg-6 mb-2">
                     <Form />
                   </div>
                 </div>
