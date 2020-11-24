@@ -25,7 +25,7 @@ class CasEce extends Component {
         };
     }
     componentDidMount() {
-        fetch('http://localhost:3001/posts/')
+        fetch('http://pure-earth-54344.herokuapp.com:3001/posts/')
             .then((response) => {
                 return response.json()
             })
