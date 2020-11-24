@@ -6,7 +6,7 @@ const app = express();
 var cors = require('cors');
 const path = require('path');
 const dbName = "api";
-const dbUrl = `mongodb+srv://malik:<password>@cluster0.yj2fu.mongodb.net/${dbName}?retryWrites=true&w=majority`;
+const dbUrl = `mongodb+srv://malik:mdp1@cluster0.yj2fu.mongodb.net/${dbName}?retryWrites=true&w=majority`;
 
 
 
