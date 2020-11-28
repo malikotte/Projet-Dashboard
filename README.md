@@ -64,7 +64,7 @@ npm run storybook
 
 5) Parfait ! Tout est lancé, vous pouvez dès à présent utiliser notre application Web (http://localhost:3000/), amusez-vous bien !
 
-6) Notre site est aussi visible sur ce lien https://covid19projet.herokuapp.com/
+6) Notre application Web est aussi visible sur ce lien https://covid19projet.herokuapp.com/ et l'api https://express-app-covid.herokuapp.com/
 
 <!-- GETTING STARTED -->
 ## Outil de répartition des tâches
