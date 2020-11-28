@@ -5,7 +5,7 @@ import './button.css';
 /**
  * Primary UI component for user interaction
  */
-export const Diag = ({ primary, size, label, ...props }) => {
+export const Diag = ({ primary, size, label , ...props }) => {
   const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
   return (
     <button
@@ -19,5 +19,5 @@ export const Diag = ({ primary, size, label, ...props }) => {
 
 
 Diag.defaultProps = {
-  name: '',
+  name: ''
 };

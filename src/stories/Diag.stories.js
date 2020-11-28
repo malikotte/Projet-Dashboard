@@ -14,7 +14,7 @@ const Template = (args) => <Graph {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
-  name: ''
+  name: '' , series : ["" , "" , ""]
 };
 
 

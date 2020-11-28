@@ -18,3 +18,7 @@ export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => (
   </header>
 );
 
+Header.defaultProps = {
+    name: '', 
+  };
+  
