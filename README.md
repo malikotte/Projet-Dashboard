@@ -28,7 +28,7 @@
 <!-- ABOUT THE PROJECT -->
 ## À propos du projet
 
-Notre projet intitulé Covid Analyzer a pour but d'afficher les données issues des différents gouvernements sur le Coronavirus. C'est une application web créee en ReactJS/Nodejs, sur le site est présent 7 widgets qui affichent différentes informations sur le pays choisi par l'utilisateur et sur l'ECE Paris.
+Notre projet intitulé Covid Analyzer a pour but d'afficher les données issues des différents gouvernements sur le Coronavirus. C'est une application web créee en ReactJS/Nodejs, sur le site sont présents 7 widgets qui affichent différentes informations sur le pays choisi par l'utilisateur et sur l'ECE Paris.
 Vous avez à disposition une page d'administration qui va vous permettre d'injecter des données dans un des 7 widgets présents sur le site.
 
 
