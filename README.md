@@ -33,7 +33,7 @@ Vous avez à disposition une page d'administration qui va vous permettre d'injec
 
 
 ### Comment lancer notre projet ?
-1) Rendez-vous dans à la racine de l'api qui se trouve dans la branche master et installez les modules avec la commande suivante :
+1) Rendez-vous à la racine de l'api qui se trouve dans la branche master et installez les modules avec la commande suivante :
 ```
 npm install
 ```
