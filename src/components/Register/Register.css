@@ -1,0 +1,27 @@
+.form{
+    width: 250px!important;
+    margin-bottom: 15px;
+    max-width: 3500;
+}
+
+.error{
+    color:red;
+}
+.card-register{
+    height: 500px;
+}
+#card-body{
+    margin-top: 2.25em;
+}
+.error{
+    color: red;
+}
+
+.error1{
+    color: red;
+}
+
+
+.success{
+    color: green;
+}
