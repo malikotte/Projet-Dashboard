@@ -2,7 +2,7 @@ import app from 'firebase/app';
 import 'firebase/auth';
 import 'firebase/firestore';
 const config = {
-    apiKey: "AIzaSyBOnaRphNbDhjJNBK4zLqUkNLTTsawK-FA",
+    apiKey: "",
     authDomain: "coviddashboard-80cd7.firebaseapp.com",
     projectId: "coviddashboard-80cd7",
     storageBucket: "coviddashboard-80cd7.appspot.com",
